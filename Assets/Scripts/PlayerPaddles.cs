@@ -22,5 +22,5 @@ public class PlayerPaddles : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector2.up);
-    }
+    }//ee
 }
