@@ -14,5 +14,11 @@ public class GameManager : MonoBehaviour
     {
         playerScore++;
         playerScoreText.text = playerScore.ToString();
+
+    }
+    public void AIAddPoint()
+    {
+        aiScore++;
+        aiScoreText.text = aiScore.ToString();
     }
 }

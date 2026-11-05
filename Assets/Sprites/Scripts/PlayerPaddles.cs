@@ -3,6 +3,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerPaddles : MonoBehaviour
 {
+
     [SerializeField] private float speed;
     private Vector2 directionInput;
 

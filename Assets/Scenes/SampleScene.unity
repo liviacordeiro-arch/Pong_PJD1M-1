@@ -560,8 +560,8 @@ Transform:
   m_GameObject: {fileID: 544026324}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.03, y: -0.05, z: 0}
-  m_LocalScale: {x: 2.842598, y: 2.842598, z: 2.842598}
+  m_LocalPosition: {x: 0.3333, y: 0.0301, z: 0}
+  m_LocalScale: {x: 2.8718767, y: 2.9980881, z: 2.842598}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -755,8 +755,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 160.8
+  m_fontSizeBase: 160.8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -854,6 +854,7 @@ GameObject:
   - component: {fileID: 781717649}
   - component: {fileID: 781717648}
   - component: {fileID: 781717650}
+  - component: {fileID: 781717651}
   m_Layer: 0
   m_Name: LEFT WALL
   m_TagString: Untagged
@@ -930,8 +931,8 @@ Transform:
   m_GameObject: {fileID: 781717647}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.98, y: 0.48371, z: 0}
-  m_LocalScale: {x: 1, y: 17.01567, z: 1}
+  m_LocalPosition: {x: -9.776, y: 0.1808, z: 0}
+  m_LocalScale: {x: 1.407949, y: 13.077386, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 737191723}
@@ -982,6 +983,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &781717651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781717647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c578ee633f827a4690117a603264016, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Wall
 --- !u!1 &915711061
 GameObject:
   m_ObjectHideFlags: 0
@@ -1253,8 +1266,8 @@ Transform:
   m_GameObject: {fileID: 916724093}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.1, y: 0.48371, z: 0}
-  m_LocalScale: {x: 1, y: 17.01567, z: 1}
+  m_LocalPosition: {x: 10.1842, y: 0.175, z: 0}
+  m_LocalScale: {x: 1.1683645, y: 12.919479, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 737191723}
@@ -1451,6 +1464,7 @@ RectTransform:
   - {fileID: 447024374}
   - {fileID: 664800913}
   - {fileID: 1948057229}
+  - {fileID: 1386994739}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1458,6 +1472,50 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1386994738
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1386994739}
+  - component: {fileID: 1386994740}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1386994739
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1386994738}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1224761618}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 194, y: -34}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1386994740
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1386994738}
+  m_CullTransparentMesh: 1
 --- !u!1 &1513640861
 GameObject:
   m_ObjectHideFlags: 0
@@ -1545,7 +1603,7 @@ Transform:
   m_GameObject: {fileID: 1513640861}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -6.12, z: 0}
+  m_LocalPosition: {x: 0.18, y: -5.89, z: 0}
   m_LocalScale: {x: 19.845, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1612,7 +1670,7 @@ GameObject:
   - component: {fileID: 1622929195}
   m_Layer: 0
   m_Name: Ball
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1853,8 +1911,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 162.3
+  m_fontSizeBase: 162.3
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
