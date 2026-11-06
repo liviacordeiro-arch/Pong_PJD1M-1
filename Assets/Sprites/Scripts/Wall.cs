@@ -2,15 +2,21 @@ using UnityEngine;
 
 public class Wall : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [SerializeField] private GameManager gameManager;
 
-    // Update is called once per frame
-    void Update()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        
+        if (collision.gameObject.tag == "Ball")
+        {
+            if (CompareTag("AIWall"))
+            {
+               gameManager.PlayerAddPoint();
+            }
+      
+            if (CompareTag("PlayerWall"))
+            {
+
+            }
+        }
     }
 }

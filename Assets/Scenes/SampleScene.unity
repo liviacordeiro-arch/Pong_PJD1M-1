@@ -857,7 +857,7 @@ GameObject:
   - component: {fileID: 781717651}
   m_Layer: 0
   m_Name: LEFT WALL
-  m_TagString: Untagged
+  m_TagString: PlayerWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -995,6 +995,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c578ee633f827a4690117a603264016, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Wall
+  gameManager: {fileID: 0}
 --- !u!1 &915711061
 GameObject:
   m_ObjectHideFlags: 0
@@ -1192,7 +1193,7 @@ GameObject:
   - component: {fileID: 916724096}
   m_Layer: 0
   m_Name: RIGHT WALL
-  m_TagString: Untagged
+  m_TagString: AIWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
